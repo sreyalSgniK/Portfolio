@@ -1,11 +1,12 @@
-const button = document.getElementById("theme-toggle");
-
-button.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-
-  if (document.body.classList.contains("light")) {
-    button.innerHTML = '<i class="fa-solid fa-sun"></i>';
-  } else {
-    button.innerHTML = '<i class="fa-solid fa-moon"></i>';
-  }
-});
+const els = document.querySelectorAll(".hidden");
+const ob = new IntersectionObserver(
+  (es) =>
+    es.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add("show");
+        ob.unobserve(e.target);
+      }
+    }),
+  { threshold: 0.15 },
+);
+els.forEach((el) => ob.observe(el));
