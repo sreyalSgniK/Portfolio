@@ -233,9 +233,9 @@ section h2{
     color:#111827;
 }
 
-/* Skills */
+/* Certificates */
 
-.skills-grid{
+.certificates-grid{
 
     display:grid;
 
@@ -247,7 +247,7 @@ section h2{
     margin-top:30px;
 }
 
-.skills-grid div{
+.certificates-grid div{
 
     background:#1f2937;
 
@@ -260,7 +260,7 @@ section h2{
     transition:.3s;
 }
 
-.skills-grid div:hover{
+.certificates-grid div:hover{
 
     transform:translateY(-5px);
 
@@ -466,14 +466,14 @@ footer{
 
 }
 
-/* Skill delays */
+/* Certificates delays */
 
-.skills-grid div:nth-child(1){transition-delay:.0s;}
-.skills-grid div:nth-child(2){transition-delay:.1s;}
-.skills-grid div:nth-child(3){transition-delay:.2s;}
-.skills-grid div:nth-child(4){transition-delay:.3s;}
-.skills-grid div:nth-child(5){transition-delay:.4s;}
-.skills-grid div:nth-child(6){transition-delay:.5s;}
+.certificates-grid div:nth-child(1){transition-delay:.0s;}
+.certificates-grid div:nth-child(2){transition-delay:.1s;}
+.certificates-grid div:nth-child(3){transition-delay:.2s;}
+.certificates-grid div:nth-child(4){transition-delay:.3s;}
+.certificates-grid div:nth-child(5){transition-delay:.4s;}
+.certificates-grid div:nth-child(6){transition-delay:.5s;}
 
 /* Education delays */
 
